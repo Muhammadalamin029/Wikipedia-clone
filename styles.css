@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap');
+
+body {
+    font-family: 'Ubuntu';
+    background: rgb(101, 146, 214);
+    display: flex;
+    justify-content: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: 1.5;
+}
+
+.search-box {
+    padding: 30px;
+    width: 600px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.search-box h2.header {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.search-box input{
+    width: 100%;
+    padding: 5px;
+    margin: 15px 0;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    text-align: center;
+}
+
+.search-box button.search-botton {
+    background: rgb(168, 248, 152);
+    padding: 10px;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+}
+
+.search-box button:hover {
+    background: #05e217;
+}
+
+.search-result {
+    padding: 15px;
+    margin: 20px 0;
+    background: #109898;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.search-result h2 {
+    font-size: 2rem;
+}
+
+.search-result p{
+    letter-spacing: 1.5;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.search-result a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    background: #125977;
+    width: 100%;
+    padding: 3px;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: none;
+}
+
