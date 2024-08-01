@@ -1,14 +1,26 @@
 
-const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=500&srsearch=`
+const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=13&srsearch=`
 const searchQuery = document.querySelector("#search-info");
 
 
 async function getSearch() {
+    
+
+    if(searchQuery.value === "") {
+        alert("input cannot be empty!!");
+    }
+    
     const response = await fetch(url + searchQuery.value)
     const data = await response.json()
-
-
+    
     showSearchResult(data.query.search)
+    
+    
+    
+        
+        
+
+    
 }
 
 function showSearchResult(data) {
